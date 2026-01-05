@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 220px; padding: 12px; font-family: sans-serif; font-size: 13px; }
+    .row { margin-bottom: 12px; }
+    label { display: block; margin-bottom: 4px; font-weight: 600; }
+    input[type="text"] { width: 100%; box-sizing: border-box; padding: 4px; }
+    .note { font-size: 11px; color: #666; margin-top: 4px; }
+  </style>
+</head>
+<body>
+  <div class="row">
+    <label>
+      <input type="checkbox" id="toggle"> Enable Auto-Open
+    </label>
+  </div>
+  
+  <div class="row">
+    <label for="teamId">Team ID (Required for messages)</label>
+    <input type="text" id="teamId" placeholder="e.g. T0123ABC">
+    <div class="note">Find this in your browser URL: app.slack.com/client/<b>T123...</b></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
