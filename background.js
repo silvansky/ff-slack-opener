@@ -50,15 +50,16 @@ let settings = {
             }
           }
           return deepLink;
+        } else {
+            console.error("No Team ID set");
         }
       }
     } catch (e) {
       console.error("Slack Opener Error:", e);
     }
   
-    // Fallback: If no Team ID is set, or parsing failed, use the generic opener.
-    // This relies on the App to guess the context.
-    return `slack://open?url=${encodeURIComponent(url)}`;
+    // Fallback: If no Team ID is set, or parsing failed, just open the source url
+    return url;
   }
   
   // 4. Context Menu

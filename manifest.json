@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Open in Slack App",
-    "version": "1.2",
+    "version": "1.3",
     "description": "Opens Slack links in the App using official Deep Link syntax.",
     "permissions": [
       "webRequest",
@@ -18,7 +18,15 @@
     },
     "action": {
       "default_popup": "popup.html",
-      "default_title": "Slack Opener Settings"
+      "default_title": "Slack Opener Settings",
+      "default_icon": {
+        "16": "icons/icon-16.png",
+        "32": "icons/icon-32.png"
+      }
+    },
+    "icons": {
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
     },
     "browser_specific_settings": {
       "gecko": {
