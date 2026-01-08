@@ -11,6 +11,13 @@ A Firefox extension that automatically opens Slack web links in the native Slack
 
 ## Installation
 
+### From GitHub Releases (Recommended)
+
+1. Download the latest signed `.xpi` file from the [Releases page](https://github.com/silvansky/ff-slack-opener/releases)
+2. In Firefox, go to `about:addons`
+3. Click the gear icon → "Install Add-on From File..."
+4. Select the downloaded `.xpi` file
+
 ### From Source (Temporary)
 
 1. Clone or download this repository
